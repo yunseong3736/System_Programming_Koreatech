@@ -25,7 +25,7 @@ int main(int argc, char *argv[]){
 
     printf("PID : %d\nPGID : %d\n",pID,pgID);
     printf("-------------------\n");
-    setpgid(pID, getint(argv[1]));
+    setpgid(pID, (pid_t)getint(argv[1]));
     pgID = (int)getpgid(0);
     printf("PID : %d\nPGID : %d\n",pID,pgID);
 
