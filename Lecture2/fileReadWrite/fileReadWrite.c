@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 int main(void) {
-	    int rfd, wfd, n;
+    int rfd, wfd, n;
 	        char buf[10];
 
 		    rfd = open("hello.txt", O_RDONLY);
